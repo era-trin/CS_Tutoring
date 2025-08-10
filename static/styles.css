@@ -1,0 +1,31 @@
+.my-navbar {
+  background-color: #f8f8f8; /* dark blue */
+}
+
+.my-navbar .navbar-brand,
+.my-navbar .nav-link {
+  color: white;
+}
+
+.navbar-brand{
+	color:blue;
+}
+
+.my-navbar .nav-link:hover,
+.my-navbar .nav-link:focus {
+  color: #cce5ff; /* light blue on hover/focus */
+}
+
+.my-navbar .dropdown-menu {
+  background-color: #004085; /* same dark blue background for dropdown */
+}
+
+.my-navbar .dropdown-item {
+  color: white;
+}
+
+.my-navbar .dropdown-item:hover,
+.my-navbar .dropdown-item:focus {
+  background-color: #cce5ff; /* light blue background on hover */
+  color: #004085; /* dark blue text */
+}
