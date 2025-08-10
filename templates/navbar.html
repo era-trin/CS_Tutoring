@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Document</title>
+
+      <style>
+        .profile-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 0;
+            border: 2px solid #fff;
+            background: none;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .profile-btn img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .profile-btn:focus {
+            box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+        }
+        
+        .profile-btn::after {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+ 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Harlem Coding Tutors</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link{% if page == 'home' %} active{% endif %}" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page == 'features' %} active{% endif %}" href="/lib">Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page == 'pricing' %} active{% endif %}" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle{% if page == 'dropdown' %} active{% endif %}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Features
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/">Home</a></li>
+            <li><a class="dropdown-item" href="/insights">Insights</a></li>
+            <li><a class="dropdown-item" href="/micro">Micro</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="dropdown ms-auto">
+      <button class="btn profile-btn dropdown-toggle" type="button" id="circleDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Profile Avatar">
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="circleDropdown">
+        <li><a class="dropdown-item" href="/profile">Profile</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+</body>
+</html>
