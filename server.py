@@ -19,5 +19,8 @@ def about():
 def contact():
     return render_template("contact.html")
 
+@app.route('/courses')
+def courses():
+    return render_template("courses.html")
 if __name__ == '__main__': 
     app.run(debug=True, port = 8000)
