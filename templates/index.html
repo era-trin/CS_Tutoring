@@ -12,15 +12,15 @@
     <title>HCT</title>
 </head>
 <body>
-    
-{% include 'navbar.html' %} 
+
+{% include 'navbar.html' %}
 
 <!-- Hero Section Wireframe -->
-<section class="hero-section d-flex align-items-center justify-content-center" style="height: 60vh; background: #e9ecef;">
+<section class="hero-section d-flex align-items-center justify-content-center" style="height: 60vh;">
     <div class="container text-center">
-        <h1 class="display-4">Welcome to Our Homepage</h1>
+    <h1 class="display-4 typewriter">Program with Harlem Coding Tutors</h1>
         <p class="lead">This is a hero section wireframe. Add your main message or call to action here.</p>
-        <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+    <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Get Started</a>
     </div>
 </section>
 
@@ -31,19 +31,19 @@
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="card p-3 mb-3">
-                        <h5>Service 1</h5>
+                        <h5>p5/Java-Script</h5>
                         <p>Short description of service 1.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="card p-3 mb-3">
-                        <h5>Service 2</h5>
+                        <h5>HTML and CSS</h5>
                         <p>Short description of service 2.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="card p-3 mb-3">
-                        <h5>Service 3</h5>
+                        <h5>Python</h5>
                         <p>Short description of service 3.</p>
                     </div>
                 </div>
@@ -67,6 +67,17 @@
 <p1>Harlem Coding Tutors</p1>   
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script>
+    // Remove the typewriter cursor after animation
+    window.addEventListener('DOMContentLoaded', function() {
+        var el = document.querySelector('.typewriter');
+        if (el) {
+            var typingDuration = 2500 + 1000; // typing animation + delay (ms)
+            setTimeout(function() {
+                el.classList.add('done');
+            }, typingDuration);
+        }
+    });
 </script>
 </body>
 </html>

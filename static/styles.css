@@ -1,31 +1,112 @@
+.hero-section h1.typewriter {
+  padding-bottom: 0.3em;
+}
+/* Remove typewriter cursor when done */
+.typewriter.done {
+  border-right: none !important;
+}
+/* Gradient background for hero section only */
+
+/* Animated gradient background for hero section */
+/* Static gradient background for hero section */
+.hero-section {
+  background: linear-gradient(90deg, #1a3766 0%, #3B79DA 50%, #a3c8ff 100%);
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 1px 0 #222;
+}
+
+
+
+/* Typewriter effect for hero headline */
+
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #fff;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
+  animation:
+    typing 2.5s steps(30, end) 1s 1 normal both,
+    blink-caret .75s step-end 3s;
+}
+
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff; }
+}
+
+
+
+.hero-section h1,
+.hero-section p {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 1px 0 #222;
+}
+
+.hero-section .btn-primary {
+  background: #fff !important;
+  color: #2563eb !important;
+  border: 2px solid #bbb !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  text-shadow: none !important;
+}
+.hero-section .btn-primary:hover, .hero-section .btn-primary:focus {
+  background: #2563eb !important;
+  color: #fff !important;
+  border: 2px solid #bbb !important;
+  text-shadow: none !important;
+}
+
+
+
+body {
+  background: #e3f0ff !important; /* light blue */
+}
+
 .my-navbar {
-  background-color: #f8f8f8; /* dark blue */
+  background-color: #fff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
 .my-navbar .navbar-brand,
-.my-navbar .nav-link {
-  color: white;
+.my-navbar .nav-link,
+.my-navbar .dropdown-toggle {
+  color: #444 !important;
+  font-weight: 500;
 }
 
-.navbar-brand{
-	color:blue;
+.my-navbar .navbar-brand .logo-symbol {
+  color: #3a3a3a;
+  margin-right: 0.3em;
 }
 
+.my-navbar .nav-link.active,
 .my-navbar .nav-link:hover,
 .my-navbar .nav-link:focus {
-  color: #cce5ff; /* light blue on hover/focus */
+  color: #007bff !important;
 }
 
 .my-navbar .dropdown-menu {
-  background-color: #004085; /* same dark blue background for dropdown */
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
 }
 
 .my-navbar .dropdown-item {
-  color: white;
+  color: #444;
 }
 
 .my-navbar .dropdown-item:hover,
 .my-navbar .dropdown-item:focus {
-  background-color: #cce5ff; /* light blue background on hover */
-  color: #004085; /* dark blue text */
+  background-color: #e3f0ff;
+  color: #007bff;
 }

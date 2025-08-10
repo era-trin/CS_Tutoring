@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Contact Us | Harlem Coding Tutors</title>
+</head>
+<body>
+{% include 'navbar.html' %}
+<section class="hero-section d-flex align-items-center justify-content-center" style="height: 40vh;">
+    <div class="container text-center">
+        <h1 class="display-4">Contact Us</h1>
+        <p class="lead">We'd love to hear from you! Reach out or book a meeting below.</p>
+    </div>
+</section>
+<section class="py-5" style="background: #f8f9fa;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4 mb-4">
+                    <h5>Email</h5>
+                    <p><a href="mailto:info@harlemcodingtutors.com">info@harlemcodingtutors.com</a></p>
+                    <h5>Phone</h5>
+                    <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <h5>Book a Meeting</h5>
+                    <a href="https://calendar.google.com/calendar/u/0?cid=aGFybGVtY29kaW5ndHV0b3JzQGdtYWlsLmNvbQ" target="_blank" class="btn btn-primary w-100 mb-2">Book an Appointment</a>
+                    <small class="text-muted">You will be redirected to our Google Calendar booking page.</small>
+                    <div class="mt-4">
+                        <iframe src="https://calendar.google.com/calendar/embed?src=harlemcodingtutors%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+                        <small class="text-muted">See our public calendar for availability.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
