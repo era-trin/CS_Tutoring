@@ -151,3 +151,7 @@ body {
   color: #007bff;
 }
 /* Services section background image for all screen sizes */
+
+.border-bottom {
+  text-align: center;
+}
