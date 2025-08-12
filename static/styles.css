@@ -1,3 +1,45 @@
+/* --- Course Cards Custom Styles --- */
+.course-card {
+  border: none;
+  box-shadow: 0 4px 24px 0 rgba(60, 90, 130, 0.08);
+  transition: transform 0.15s, box-shadow 0.15s;
+  border-radius: 1.2rem;
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  background: #fff;
+}
+.course-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px 0 rgba(60, 90, 130, 0.16);
+}
+.course-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 2.2rem;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(60, 90, 130, 0.10);
+}
+.bg-js {
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+}
+.bg-html {
+  background: linear-gradient(135deg, #ff5858 0%, #f09819 100%);
+}
+.bg-python {
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+}
+.course-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #1a3766;
+}
+.course-card p {
+  color: #444;
+  font-size: 1.08rem;
+}
 /* Responsive tweaks for mobile */
 @media (max-width: 576px) {
   .my-navbar .navbar-brand span {
