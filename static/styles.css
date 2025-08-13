@@ -288,8 +288,13 @@ body {
   background-color: #e3f0ff;
   color: #007bff;
 }
-/* Services section background image for all screen sizes */
 
-.border-bottom {
-  text-align: center;
+.responsive-badge {
+    white-space: normal;
+    word-break: break-word;
+    font-size: 1rem;
+    max-width: 100%;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
