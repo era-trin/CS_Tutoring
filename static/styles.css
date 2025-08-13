@@ -86,6 +86,13 @@
   text-align: center;
 }
 
+.gradient-text {
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 /* Responsive tweaks for mobile */
 @media (max-width: 576px) {
   .my-navbar .navbar-brand span {
