@@ -36,6 +36,46 @@
   font-size: 1.35rem;
     font-weight: 500;
 }
+
+/* Mission section booking button styling */
+.booking-btn {
+  background: linear-gradient(45deg, #43cea2, #185a9d) !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 600;
+  padding: 0.75rem 2rem !important;
+  border-radius: 2rem !important;
+  box-shadow: 0 4px 16px rgba(67, 206, 162, 0.3), 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.booking-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.booking-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(67, 206, 162, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+  background: linear-gradient(45deg, #185a9d, #43cea2) !important;
+}
+
+.booking-btn:hover::before {
+  left: 100%;
+}
+
+.booking-btn:active {
+  transform: translateY(0) !important;
+}
 /* --- Course Cards Custom Styles --- */
 .course-card {
   border: none;
