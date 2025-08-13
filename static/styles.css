@@ -24,7 +24,7 @@
   background: rgba(255,255,255,0.85);
   border-radius: 1.2rem;
   box-shadow: 0 4px 24px 0 rgba(60, 90, 130, 0.10);
-  color: #1a3766;
+  color: #185a9d;
   font-size: 1.15rem;
   font-weight: 500;
   padding: 2rem 1.2rem 1.5rem 1.2rem;
@@ -32,7 +32,7 @@
 }
 
 .mission-text {
-  color: #f7d13d;
+  color: #000000;
   font-size: 1.35rem;
     font-weight: 500;
 }
