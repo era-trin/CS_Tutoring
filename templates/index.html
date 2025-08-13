@@ -69,16 +69,19 @@
     </section>
 
     <!-- Our Mission Section Wireframe -->
-    <section class="mission-section py-5" style="background: #e9ecef;">
-        <div class="container">
-            <h2 class="text-center mb-4">Our Mission</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card p-4">
-                        <p class="mb-0 text-center">Our mission is to provide exceptional services and make a positive impact. Add your mission statement here.</p>
+    <section class="mission-section py-5 position-relative">
+        <div class="mission-overlay"></div>
+        <div class="container position-relative" style="z-index:2;">
+                <h2 class="text-center mb-4 mission-title">Our Mission</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="mission-card p-4 mx-auto">
+                            <p class="mb-0 text-center mission-text">Helping underrepresented kids into a future where technology opens doors</p>
+                        </div>
+                        <br>
+                        <img src="{{ url_for('static', filename='coding_tutors_AI1.png') }}" alt="Coding Tutors AI" class="img-fluid mb-4" style="border-radius: 1rem; box-shadow: 0 4px 24px rgba(60,90,130,0.10);">
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 <div class = "border-bottom">

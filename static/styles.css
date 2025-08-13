@@ -1,3 +1,41 @@
+/* General Styles */
+/* Mission Section Background Image & Readability */
+.mission-section {
+  background: url('../static/coding_tutors_AI1.png') center center/cover no-repeat;
+  position: relative;
+  min-height: 350px;
+  color: #fff;
+}
+
+.mission-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgb(23, 52, 76); /* dark blue semi-transparent overlay for readability */
+  z-index: 1;
+}
+
+.mission-title {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+  font-weight: 700;
+}
+
+.mission-card {
+  background: rgba(255,255,255,0.85);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px 0 rgba(60, 90, 130, 0.10);
+  color: #1a3766;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  z-index: 2;
+}
+
+.mission-text {
+  color: #f7d13d;
+  font-size: 1.35rem;
+    font-weight: 500;
+}
 /* --- Course Cards Custom Styles --- */
 .course-card {
   border: none;
@@ -5,7 +43,7 @@
   transition: transform 0.15s, box-shadow 0.15s;
   border-radius: 1.2rem;
   padding: 2rem 1.2rem 1.5rem 1.2rem;
-  background: #fff;
+  background: #fff; 
 }
 .course-card:hover {
   transform: translateY(-6px) scale(1.03);
