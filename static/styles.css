@@ -40,6 +40,14 @@
   color: #444;
   font-size: 1.08rem;
 }
+
+/* Skill level badges centering */
+.course-card .badge {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /* Responsive tweaks for mobile */
 @media (max-width: 576px) {
   .my-navbar .navbar-brand span {
