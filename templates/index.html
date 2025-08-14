@@ -32,44 +32,56 @@
 
     <!-- Our Services Section Wireframe -->
     <section class="services-section py-5" style="background: #f8f9fa;">
-        <div class="container">
-            <h2 class="text-center mb-4">Our Services</h2>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <div class="card p-3 mb-3">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 text-center d-flex">
+                <div class="card p-3 mb-3 flex-fill h-100 d-flex flex-column justify-content-between">
+                    <div>
                         <div class="mb-2">
                             <span class="badge bg-success fs-6 px-3 py-2">Perfect for First-Time Coders</span>
                         </div>
                         <h5>p5 and Javascript</h5>
-                        <p>Requirements: Any computer with, a modern web browser, and Zoom.</p>
-                        <a href="{{ url_for('courses') }}" class="btn btn-tertiary gradient-text">Learn More</a>
+                        <p>Requirements: Any computer with a modern web browser and Zoom.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="{{ url_for('courses') }}" class="btn btn-tertiary gradient-text w-100">Learn More</a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <div class="card p-3 mb-3">
+            </div>
+            <div class="col-md-4 text-center d-flex">
+                <div class="card p-3 mb-3 flex-fill h-100 d-flex flex-column justify-content-between">
+                    <div>
                         <div class="mb-2">
                             <span class="badge bg-info fs-6 px-3 py-2">Great for Beginners</span>
                         </div>
                         <h5>HTML and CSS</h5>
-                        <p>Requirements: Windows, Apple, or Linux computer with 1 GB of free storage and Zoom. </p>
-                        <a href="{{ url_for('courses') }}" class="btn btn-tertiary gradient-text">Learn More</a>
+                        <p>Requirements: Windows, Apple, or Linux computer with 1 GB of free storage and Zoom.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="{{ url_for('courses') }}" class="btn btn-tertiary gradient-text w-100">Learn More</a>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <div class="card p-3 mb-3">
+            </div>
+            <div class="col-md-4 text-center d-flex">
+                <div class="card p-3 mb-3 flex-fill h-100 d-flex flex-column justify-content-between">
+                    <div>
                         <div class="mb-2">
-                            <span class="badge bg-warning text-dark fs-6 px-3 py-2 text-wrap w-100 w-md-auto d-inline-block">
-        Ideal for Beginners with Some Experience
-    </span>
+                            <span class="badge bg-warning text-dark fs-6 px-3 py-2 text-wrap d-block responsive-badge">
+                                Ideal for Beginners with Some Experience
+                            </span>
                         </div>
                         <h5>Python</h5>
                         <p>Requirements: Windows, Apple, or Linux computer with 5 GB of free storage and Zoom.</p>
-                        <a href="{{ url_for('courses') }}" class="btn btn-tertiary gradient-text">Learn More</a>
+                    </div>
+                    <div class="mt-auto">
+                        <a href="{{ url_for('courses') }}" class="btn btn-tertiary gradient-text w-100">Learn More</a>
                     </div>
                 </div>
-               
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Our Mission Section Wireframe -->
     <section class="mission-section py-5 position-relative">
@@ -79,7 +91,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="mission-card p-4 mx-auto">
-                            <p class="mb-0 text-center mission-text">We prepare the younger generation transition into a future where technology opens doors.</p>
+                            <p class="mb-0 text-center mission-text">We prepare the next generation for a future where programming opens doors.</p>
                         </div>
                         <br>
                         <div class="text-center mb-4">
