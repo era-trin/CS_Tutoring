@@ -383,3 +383,39 @@ body {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
+
+
+/* Floating particles for visual intrigue */
+.floating-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: float-particle 8s ease-in-out infinite;
+  z-index: 1;
+}
+.floating-particle:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; animation-duration: 6s; }
+.floating-particle:nth-child(2) { top: 60%; right: 15%; animation-delay: 2s; animation-duration: 8s; }
+.floating-particle:nth-child(3) { top: 40%; left: 80%; animation-delay: 4s; animation-duration: 7s; }
+.floating-particle:nth-child(4) { top: 80%; left: 20%; animation-delay: 1s; animation-duration: 9s; }
+.floating-particle:nth-child(5) { top: 30%; right: 30%; animation-delay: 3s; animation-duration: 5s; }
+
+@keyframes float-particle {
+  0%, 100% { 
+    transform: translateY(0px) translateX(0px) scale(1);
+    opacity: 0.6;
+  }
+  25% { 
+    transform: translateY(-20px) translateX(10px) scale(1.2);
+    opacity: 1;
+  }
+  50% { 
+    transform: translateY(-10px) translateX(-5px) scale(0.8);
+    opacity: 0.8;
+  }
+  75% { 
+    transform: translateY(-30px) translateX(15px) scale(1.1);
+    opacity: 0.9;
+  }
+}
