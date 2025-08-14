@@ -15,12 +15,21 @@
 }
 
 .mission-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.2rem;
   color: #fff;
   text-shadow: 0 2px 8px rgba(0,0,0,0.45);
   font-weight: 700;
 }
 
 .mission-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: rgba(255,255,255,0.85);
   border-radius: 1.2rem;
   box-shadow: 0 4px 24px 0 rgba(60, 90, 130, 0.10);
@@ -34,7 +43,23 @@
 .mission-text {
   color: #17b9ff;
   font-size: 1.35rem;
-    font-weight: 500;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  padding: 0.7em 0.5em 0.3em 0.5em;
+  margin: 0 auto;
+  max-width: 95%;      /* Increased from 420px to 95% of parent */
+  width: 100%;         /* Ensures it stretches within the card */
+}
+
+/* --- Make section titles larger on all screens --- */
+.services-section h2,
+.mission-section h2 {
+  font-size: 2.5rem;   /* Adjust as needed */
+  /*font-weight: 800;*/
+  margin-bottom: 1.2rem;
 }
 /* --- Course Cards Custom Styles --- */
 .course-card {
@@ -326,8 +351,55 @@ body {
   background-color: #e3f0ff;
   color: #007bff;
 }
+
 /* Services section background image for all screen sizes */
 
 .border-bottom {
   text-align: center;
+}
+
+/* Mission Section Flex Layout */
+.mission-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  gap: 2.5rem;
+}
+
+.mission-content {
+  flex: 1 1 0;
+  min-width: 240px;
+  text-align: left;
+}
+
+.mission-image {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mission-image img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px 0 rgba(60, 90, 130, 0.15);
+  object-fit: cover;
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+  .mission-section .container {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+  .mission-image {
+    justify-content: center;
+  }
+  .mission-image img {
+    max-width: 100%;
+  }
 }

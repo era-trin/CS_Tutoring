@@ -67,21 +67,20 @@
     </section>
 
     <!-- Our Mission Section Wireframe -->
-    <section class="mission-section py-5 position-relative">
+    <section class="mission-section position-relative py-5">
         <div class="mission-overlay"></div>
-        <div class="container position-relative" style="z-index:2;">
-                <h2 class="text-center mb-4 mission-title">Our Mission</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="mission-card p-4 mx-auto">
-                            <p class="mb-0 text-center mission-text">Helping underrepresented kids into a future where technology opens doors</p>
-                        </div>
-                        <br>
-                        <img src="{{ url_for('static', filename='coding_tutors_AI1.png') }}" alt="Coding Tutors AI" class="img-fluid mb-4">
-                    </div>
-                </div>
+        <div class="container">
+            <div class="mission-content">
+            <h2 class="mission-title">Our Mission</h2>
+            <div class="mission-card">
+                <span class="mission-text">Helping underrepresented kids discover their potential through computer science.</span>
+            </div>
+            </div>
+            <div class="mission-image">
+            <img src="{{ url_for('static', filename='coding_tutors_AI1.png') }}" alt="Tutoring" />
+            </div>
         </div>
-    </section>
+</section>
 <div class = "border-bottom">
   
 </div>
