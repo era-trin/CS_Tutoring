@@ -172,16 +172,6 @@
 }
 
 
-
-.hero-section h1.typewriter {
-  padding-bottom: 0.3em;
-}
-/* Remove typewriter cursor when done */
-.typewriter.done {
-  border-right: none !important;
-}
-/* Gradient background for hero section only */
-
 /* Animated gradient background for hero section */
 /* Static gradient background for hero section */
 .hero-section {
@@ -349,7 +339,7 @@ body {
 }
 
 .my-navbar .navbar-brand .logo-symbol {
-  color: #3a3a3a;
+  color: #003cff;
   margin-right: 0.3em;
 }
 
